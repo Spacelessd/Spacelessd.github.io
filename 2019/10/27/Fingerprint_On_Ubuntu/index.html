@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Spaceless"><link rel="alternative" href="/atom.xml" title="Spaceless" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>在Ubuntu上启用指纹识别 - Spaceless</title>
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+<!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]-->
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/fancybox/jquery.fancybox.min.js"></script>
+<meta name="generator" content="Hexo 5.3.0"></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/">Spaceless</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/tags">Tags</a></li><li class="head-nav__item"><a class="head-nav__link" href="/archives">Archives</a></li><li class="head-nav__item"><a class="head-nav__link" href="/friends">Friends</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time class="post__time" datetime="2019-10-27T14:07:10.000Z">2019 - 10 - 27 22:07:10</time><h1 class="post__title"><a href="/2019/10/27/Fingerprint_On_Ubuntu/">在Ubuntu上启用指纹识别</a></h1><div class="post__main echo"><p>写着一篇的原因是中文网络上对于fprintd的教程已经严重与现在的Ubuntu脱节==  </p>
+<p>网上写的是真的麻烦，实际上非常简单  </p>
+<blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install -y fprintd libpam-fprintd</span><br></pre></td></tr></table></figure>
+<p>执行之后你就可以直接重启，然后用图形化设置界面录入指纹或者执行fprintd-enroll   </p>
+</blockquote>
+<p>就那么简单，你可以用指纹来登录Ubuntu了。但是你现在暂时不能用它来通过sudo的密码验证  </p>
+<p>因此你还需要  </p>
+<blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pam-auth-update</span><br></pre></td></tr></table></figure>
+<p>然后在里面勾选上指纹识别，reboot即可。</p>
+</blockquote>
+<p>百度上说的是真的麻烦==，实际上只要两条指令就好了  </p>
+<p>最后附上我的配置  </p>
+<p>Ubuntu 18.04  </p>
+<p>从初中开始陪伴我的ThinkPad X230</p>
+</div></header><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a class="post__tag__link" href="/tags/%E6%8A%98%E8%85%BE/">折腾</a></li></ul></footer></article><div class="comments" id="lv-container" data-id="lv-container" data-uid="MTAyMC8zODA0OC8xNDU3OA=="><script>(function(d, s) {
+  var j, e = d.getElementsByTagName(s)[0];
+  if (typeof LivereTower === 'function') return;
+  j = d.createElement(s);
+  j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+  j.async = true;
+  e.parentNode.insertBefore(j, e);
+})(document, 'script');</script></div></main><footer class="foot"><div class="foot-copy">&copy; 2015 - 2021 Spaceless</div></footer>
+<script src="/js/scroller.js"></script>
+
+<script src="/js/main.js"></script>
+</body></html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Spaceless"><link rel="alternative" href="/atom.xml" title="Spaceless" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>Markdown语言研究 - Spaceless</title>
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+<!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]-->
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/fancybox/jquery.fancybox.min.js"></script>
+<meta name="generator" content="Hexo 5.3.0"></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/">Spaceless</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/tags">Tags</a></li><li class="head-nav__item"><a class="head-nav__link" href="/archives">Archives</a></li><li class="head-nav__item"><a class="head-nav__link" href="/friends">Friends</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time class="post__time" datetime="2017-05-20T08:57:45.000Z">2017 - 05 - 20 16:57:45</time><h1 class="post__title"><a href="/2017/05/20/Markdown/">Markdown语言研究</a></h1><div class="post__main echo"><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>因为黄鸡君发现我写友链时出现了语法错误<br>所以准备重新研究一下多年没有用过的Markdown语法  </p>
+<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><p>Md作为一种适用于网络的书写语言，反正兼容HTML就对了，可以在Md中嵌入Html语言。  </p>
+<p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。</p>
+<p>要制约的只有一些 HTML 区块元素――比如 div table pre p 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的  p 标签。  </p>
+<p>但是，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。  </p>
+<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p>使用相对路径插入图片。比如你把一个叫做1.png的图片和*.md文件放在一起，那么你就可以用这种方式插入图片:<pre>![] (1.jpg)</pre>如果不想放在同一层级,那么就可以这样插入:<pre>![] (img/1.jpg)</pre>表示引用同层级一个叫做”img”的文件夹中的1.jpg图片,以此类推.<br>其实还是在线的各种图方便反正就是把路径换成链接。。。和本地差不多。</p>
+<h3 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h3><p>插入链接的语法和插入图片差不多。</p>
+<pre>[Baidu] (http://www.baidu.com)</pre>
+<p>如果想让链接显示出来的话如</p>
+<pre>[Baidu] : http://www.baidu.com</pre>
+
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1></div></header><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a class="post__tag__link" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></li></ul></footer></article><div class="comments" id="lv-container" data-id="lv-container" data-uid="MTAyMC8zODA0OC8xNDU3OA=="><script>(function(d, s) {
+  var j, e = d.getElementsByTagName(s)[0];
+  if (typeof LivereTower === 'function') return;
+  j = d.createElement(s);
+  j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+  j.async = true;
+  e.parentNode.insertBefore(j, e);
+})(document, 'script');</script></div></main><footer class="foot"><div class="foot-copy">&copy; 2015 - 2021 Spaceless</div></footer>
+<script src="/js/scroller.js"></script>
+
+<script src="/js/main.js"></script>
+</body></html>

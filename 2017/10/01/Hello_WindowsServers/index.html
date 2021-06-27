@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Spaceless"><link rel="alternative" href="/atom.xml" title="Spaceless" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>你好啊,WindowsServer - Spaceless</title>
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+<!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]-->
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/fancybox/jquery.fancybox.min.js"></script>
+<meta name="generator" content="Hexo 5.3.0"></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/">Spaceless</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/tags">Tags</a></li><li class="head-nav__item"><a class="head-nav__link" href="/archives">Archives</a></li><li class="head-nav__item"><a class="head-nav__link" href="/friends">Friends</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time class="post__time" datetime="2017-10-01T08:57:45.000Z">2017 - 10 - 01 16:57:45</time><h1 class="post__title"><a href="/2017/10/01/Hello_WindowsServers/">你好啊,WindowsServer</a></h1><div class="post__main echo"><p>自从我的Windows各种崩溃之后<br>Ubuntu又是各种Silly的内部错误<br>感觉自己都没有一个好的系统可以玩耍了QwQ<br>然而发现DreamSpark向学生开放了WindowsServer系统的免费授权<br>便开始研究将WindowsServer桌面使用。  </p>
+<h3 id="坑爹的安装过程"><a href="#坑爹的安装过程" class="headerlink" title="坑爹的安装过程"></a>坑爹的安装过程</h3><p>当我装这系统时，各种提示我无法打开install.wim文件<br>开始时我以为我是挂在镜像文件上了，但经过排查之后<br>我的镜像文件MD5码并无问题<br>于是。。我看到了坑爹的一面，install.wim有4GB+大小<br>然而光盘镜像文件中是FAT32格式。。。。<br>最后吗，用Rufus写了个NTFS的镜像以治之。  </p>
+<h3 id="桌面化"><a href="#桌面化" class="headerlink" title="桌面化"></a>桌面化</h3><p>好吧，这才是重点。<br>首先推荐一篇知乎专栏<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/23302415">知乎专栏</a><br>我基本是按照这里桌面化Windows Server的<br>但是有一点专栏上没有提到的是————一定要开启快速启动<br>否则开机少则五分钟，多则半小时。。。。。。。  </p>
+<h3 id="关于A卡驱动"><a href="#关于A卡驱动" class="headerlink" title="关于A卡驱动"></a>关于A卡驱动</h3><p>说不能装A卡驱动的都是假的，假的假的是假的<br>运行AMD驱动安装程序，然后会解压安装文件<br>然后在硬件管理器里面手动安装即可</p>
+</div></header><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a class="post__tag__link" href="/tags/%E6%8A%98%E8%85%BE/">折腾</a></li></ul></footer></article><div class="comments" id="lv-container" data-id="lv-container" data-uid="MTAyMC8zODA0OC8xNDU3OA=="><script>(function(d, s) {
+  var j, e = d.getElementsByTagName(s)[0];
+  if (typeof LivereTower === 'function') return;
+  j = d.createElement(s);
+  j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+  j.async = true;
+  e.parentNode.insertBefore(j, e);
+})(document, 'script');</script></div></main><footer class="foot"><div class="foot-copy">&copy; 2015 - 2021 Spaceless</div></footer>
+<script src="/js/scroller.js"></script>
+
+<script src="/js/main.js"></script>
+</body></html>
